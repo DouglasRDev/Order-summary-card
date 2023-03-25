@@ -1,65 +1,92 @@
-body{
-  max-width: 1440px;
-  margin: 0auto;
-  background-color: #e0e8ff;
-}
-
-.imagem-de-fundo{
+body {
+  width: 100%;
+  height: 100vh;
+  /* alinhamento dos elementos dentro do body */
   display: flex;
-  max-width: 100vh;
-  z-index: -1;
-}
-
-.card{
-  display: flex;
-  width:350px; 
-  height: 50%;
-  margin: 0 auto; 
-  background-color: white;
-  padding: px; 
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
-  border-radius: 20px;
-  margin-top: 20px;
-  z-index: ;
-}
-
-.imagem-card{
-  display: block;
-  margin: 0 auto;
-  width: 350px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px ;
-}
-
-h1{
-  text-align: center;
-  margin-top: 20px; 
-  background-color: white;
-  font-size: 35px;
-}
-
-p{
-  text-align: center;
-  margin-top: 10px; 
-  background-color: white;
-  font-size: 15px;
-}
-
-.box-plan{
-  display: flex;
-  width:330px; 
-  height: 100px;
-  margin: 0 auto; 
-  background-color: white;
-  padding: px; 
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
-  border-radius: 20px;
-  margin-top: 20px;
-}
-
-.icone-box-plan{
-  display: flex;
-  width: 50px;
-  height: 50px;
+  justify-content: center;
   align-items: center;
+  /* fim do alinhamento */
+  background: rgb(101, 63, 39);
+  background: radial-gradient(circle, rgba(101, 63, 39, 0.5634628851540616) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.informacoes {
+  width: 900px;
+  height: 100%;
+  display: flex;
+  /* padding: 10px; */
+  align-items: center;
+  justify-content: center;
+  font-family: 'EB Garamond', serif;
+}
+
+/* coluna direita */
+
+.informacoes .coluna_direita {
+  display: flex;
+  background: url('/src/imagens/relogio\ para\ a\ pagina\ copiar.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+}
+
+/* coluna esquerda */
+
+.informacoes .coluna_esquerda {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0px 20px;
+}
+
+.informacoes .coluna_esquerda .titulo {
+  font-family: 'Satisfy', cursive !important;
+  color: gold;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.informacoes .coluna_esquerda .titulo_descricao {
+  font-family: 'EB Garamond', serif;
+  color: rgb(212, 202, 144);
+  font-size: 20px;
+  font-style: italic;
+}
+
+.informacoes .coluna_esquerda .titulo_descricao .titulo_center {
+  margin-left: 50px;
+}
+
+.informacoes .coluna_esquerda .titulo_descricao .titulo_end {
+  margin-left: 150px;
+}
+
+.informacoes .coluna_esquerda .descricao {
+  font-family: 'EB Garamond', serif;
+  color: white;
+  font-size: 18px;
+  margin-top: 9px;
+  font-style: unset;
+}
+
+.informacoes .coluna_esquerda .destaques {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  column-gap: 40px;
+}
+
+.informacoes .coluna_esquerda .destaques .destaque1 {
+  text-align: center;
+  width: 50%;
+}
+
+.informacoes .coluna_esquerda .destaques .destaque2 {
+  text-align: center;
+  width: 50%;
 }
